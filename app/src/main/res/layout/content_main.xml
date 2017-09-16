@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="es.ujaen.ssmm.contadorsimple.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <TextView
+        android:id="@+id/textView_cont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cont"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <Button
+        android:id="@+id/button_reset"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reset"
+        android:textAlignment="center"
+        tools:layout_editor_absoluteX="137dp"
+        tools:layout_editor_absoluteY="159dp"
+        android:onClick="resetContador"
+        android:layout_below="@+id/textView_cont"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="69dp" />
+
+    <Button
+        android:id="@+id/button_incre"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/incre"
+        android:textAlignment="center"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="159dp"
+        android:onClick="increContador"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/button_reset"
+        android:layout_toRightOf="@+id/button_reset"
+        android:layout_toEndOf="@+id/button_reset" />
+
+    <Button
+        android:id="@+id/button_decre"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/decre"
+        android:textAlignment="center"
+        tools:layout_editor_absoluteX="229dp"
+        tools:layout_editor_absoluteY="159dp"
+        android:onClick="decreContador"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/button_incre"
+        android:layout_toRightOf="@+id/button_incre"
+        android:layout_toEndOf="@+id/button_incre" />
+
+</RelativeLayout>

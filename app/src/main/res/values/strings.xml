@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ContadorSimple</string>
+    <string name="action_settings">Settings</string>
+    <string name="cont">Contador:</string>
+    <string name="reset">Resetear</string>
+    <string name="incre">Incrementar</string>
+    <string name="decre">Decrementar</string>
+</resources>
